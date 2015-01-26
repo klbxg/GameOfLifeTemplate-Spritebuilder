@@ -10,7 +10,7 @@
 
 @interface Grid : CCSprite
 
-// stores the current state of the creature
-
+@property (nonatomic, assign) int totalAlive;
+@property (nonatomic, assign) int generation;
 
 @end
