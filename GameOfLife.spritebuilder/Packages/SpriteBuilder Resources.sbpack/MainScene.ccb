@@ -1460,7 +1460,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>GameOfLifeAssets/Buttons/play-pressed.png</string>
+											<string>GameOfLifeAssets/Buttons/pause-pressed.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -1658,9 +1658,9 @@
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
-								<string>Grid</string>
+								<string>CCButton</string>
 								<key>memberVarAssignmentName</key>
-								<string>_grid</string>
+								<string></string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
