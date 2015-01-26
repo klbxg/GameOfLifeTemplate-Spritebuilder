@@ -8,6 +8,7 @@
 
 #import "Grid.h"
 #import "Creature.h"
+#import "UITouch+CC.h"
 
 // these are variables that cannot be changed
 static const int GRID_ROWS = 8;
@@ -63,6 +64,8 @@ static const int GRID_COLUMNS = 10;
     }
 }
 
+
+
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
 {
     //get the x,y coordinates of the touch
@@ -78,8 +81,8 @@ static const int GRID_COLUMNS = 10;
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
 {
     //get the row and column that was touched, return the Creature inside the corresponding cell
-    int row = touchPosition.y;
-    int column = touchPosition.x;
+    int row = touchPosition.y/_cellHeight;
+    int column = touchPosition.x/_cellWidth;
     return _gridArray[row][column];
 }
 
